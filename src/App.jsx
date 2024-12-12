@@ -101,9 +101,11 @@ function App() {
           <h2 className='text-lg font-bold bg-sky-300 p-2 rounded-md text-center'>
         Add a Todo
           </h2>
-<div className="addTodoInput w-full flex my-3">
+
+     <div className="addTodoInput w-full flex flex-col sm:flex-row gap-2 my-3">
+
           <input className='rounded-md px-2 text-md  flex-col flex-1' onChange={handleChange} value={todo} type='text'/>
-          <button onClick={editTodoId?handleSaveEditTodo : handleAdd} className='bg-green-600 hover:bg-green-700 p-3  py-1 rounded-md text-white mx-4 w-fit h-fit flex-col  flex-2'>{editTodoId?"Save":"Add"}</button>
+          <button onClick={editTodoId?handleSaveEditTodo : handleAdd} className='bg-green-600 hover:bg-green-700 p-3  py-1 rounded-md text-white mx-4 w-fit h-fit flex-col  flex-2 sm:ml-auto'>{editTodoId?"Save":"Add"}</button>
           </div>
           </div>
          
@@ -139,8 +141,8 @@ function App() {
 
       </div>
 
-      <div className="todoImageContainer flex-1 overflow-hidden  shadow-black shadow-md ">
-      <img  src="https://media.giphy.com/media/dQpUkK59l5Imxsh8jN/giphy.gif" alt="" className="w-full h-full rounded-lg " />
+      <div className="todoImageContainer flex-1 overflow-hidden  shadow-black shadow-md sm:block hidden">
+      <img  src="https://media.giphy.com/media/dQpUkK59l5Imxsh8jN/giphy.gif" alt="" className="w-full h-full rounded-lg" />
       </div>
 
       </div>

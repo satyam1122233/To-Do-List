@@ -104,8 +104,8 @@ function App() {
 
      <div className="addTodoInput w-full flex flex-col sm:flex-row gap-2 my-3">
 
-          <input className='rounded-md px-2 text-md  flex-col flex-1' onChange={handleChange} value={todo} type='text'/>
-          <button onClick={editTodoId?handleSaveEditTodo : handleAdd} className='bg-green-600 hover:bg-green-700 p-3  py-1 rounded-md text-white mx-4 w-fit h-fit flex-col  flex-2 sm:ml-auto'>{editTodoId?"Save":"Add"}</button>
+          <input className='rounded-md px-2 text-md  flex-col flex-1 w-full sm:w-full' onChange={handleChange} value={todo} type='text'/>
+          <button onClick={editTodoId?handleSaveEditTodo : handleAdd} className='bg-green-600 hover:bg-green-700 p-3  py-1 rounded-md text-white mx-4 w-fit h-fit flex-col  flex-2'>{editTodoId?"Save":"Add"}</button>
           </div>
           </div>
          
@@ -116,7 +116,7 @@ function App() {
 <input className='' onChange={ToggleShowTodos} type='checkbox' /> Show All List
 </div>
 
-<h2 className='text-lg font-bold shadow-sm bg-sky-300 shadow-black p-2 text-center '>Your List</h2>
+<h2 className='text-lg font-bold shadow-sm bg-sky-300 shadow-black p-2 text-center '>Your Lists</h2>
 {todos.length===0 && <div>No Data To Display</div>}
 <div className="todoListsContainer h-[46vh] overflow-y-scroll no-scrollbar rounded-md " >
 {todos.map(item=>{
@@ -142,7 +142,7 @@ function App() {
       </div>
 
       <div className="todoImageContainer flex-1 overflow-hidden  shadow-black shadow-md sm:block hidden">
-      <img  src="https://media.giphy.com/media/dQpUkK59l5Imxsh8jN/giphy.gif" alt="" className="w-full h-full rounded-lg" />
+      <img  src="https://media.giphy.com/media/dQpUkK59l5Imxsh8jN/giphy.gif" alt="" className="w-full h-full rounded-lg sm:block hidden" />
       </div>
 
       </div>

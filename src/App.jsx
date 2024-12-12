@@ -98,7 +98,7 @@ function App() {
       <div className="container flex-1" >
 
         <div className="addToDo flex flex-col shadow-md rounded-md shadow-black p-2 mr-4">
-          <h2 className='text-lg font-bold bg-sky-300 p-2 rounded-md text-center'>
+          <h2 className='text-lg text-red-500 font-bold bg-sky-300 p-2 rounded-md text-center'>
         Add a Todo
           </h2>
 <div className="addTodoInput w-full flex my-3">
@@ -108,7 +108,7 @@ function App() {
           </div>
          
 
-<div className="todos my-4  shadow-black shadow-md p-2  mr-4">
+<div className="todos my-4  shadow-black shadow-md p-2  mr-4 h-3/4">
 
 <div className="showListCheckBox justify-center mt-2 mb-4">
 <input className='' onChange={ToggleShowTodos} type='checkbox' /> Show All List

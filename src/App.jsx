@@ -116,7 +116,7 @@ function App() {
 <input className='' onChange={ToggleShowTodos} type='checkbox' /> Show All List
 </div>
 
-<h2 className='text-lg font-bold shadow-sm bg-sky-300 shadow-black p-2 text-center '>Your Lists</h2>
+<h2 className='text-lg font-bold shadow-sm bg-sky-300 shadow-black p-2 text-center '>Your List</h2>
 {todos.length===0 && <div>No Data To Display</div>}
 <div className="todoListsContainer h-[46vh] overflow-y-scroll no-scrollbar rounded-md " >
 {todos.map(item=>{

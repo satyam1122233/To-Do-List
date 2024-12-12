@@ -95,10 +95,10 @@ function App() {
     <NavBar/>
     <div className="todoContainer  bg-sky-200  my-5 mx-6 rounded-xl p-5 h-[88vh] shadow-md
       shadow-red-400 flex ">
-      <div className="container flex-1" >
+      <div className="container flex-1 overflow-hidden" >
 
         <div className="addToDo flex flex-col shadow-md rounded-md shadow-black p-2 mr-4">
-          <h2 className='text-lg text-red-500 font-bold bg-sky-300 p-2 rounded-md text-center'>
+          <h2 className='text-lg font-bold bg-sky-300 p-2 rounded-md text-center'>
         Add a Todo
           </h2>
 <div className="addTodoInput w-full flex my-3">

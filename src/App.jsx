@@ -93,7 +93,7 @@ function App() {
   return (
     <>
     <NavBar/>
-    <div className="todoContainer  bg-sky-200  my-5 mx-6 rounded-xl p-5 h-[88vh] shadow-md
+    <div className="todoContainer  my-1 mx-1 bg-sky-200 sm:my-5 sm:mx-6 rounded-xl p-5 h-[88vh] shadow-md
       shadow-red-400 flex ">
       <div className="container flex-1 overflow-hidden" >
 

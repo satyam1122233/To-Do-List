@@ -129,8 +129,8 @@ function App() {
          
          </div>
 
-          <div className="buttons flex gap-2">
-            <button onClick={()=>handleEdit(item.id)} className='bg-green-600 hover:bg-green-700 p-3 h-fit w-fit  py-1 rounded-md text-white mx-2 my-auto' >Edit</button>
+          <div className="buttons flex gap-2 sm:text-sm sm:flex-col sm:w-fit sm:h-fit">
+            <button onClick={()=>handleEdit(item.id)} className='bg-green-600 hover:bg-green-700 p-3 h-fit w-fit  py-1 rounded-md text-white mx-2 my-auto sm:bg-red-400'>Edit</button>
             <button onClick={()=>handleDelete(item.id)}  className='bg-green-600 hover:bg-green-700 p-3  py-1 rounded-md text-white mx-2 h-fit w-fit my-auto' >Delete</button>
           </div>
      </div>
